@@ -1,0 +1,217 @@
+.advantages {
+  background-color: $bg-gray;
+
+  .container {
+    @include flex;
+    @include justify-content-space-between;
+    @include align-items-flex-start;
+    padding: 12rem 0;
+
+    @include mq(md) {
+      @include flex-direction-column;
+    }
+
+    .advantages-info {
+      width: 100%;
+
+      h5 {
+        margin-bottom: 2rem;
+        font-size: 1.4rem;
+      }
+
+      .advantages-list {
+        list-style: disc;
+        margin-left: 2rem;
+
+        li {
+          font-family: $os;
+          font-size: 1.4rem;
+          color: $dark-grey;
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+
+    .advantages-img {
+      width: 100%;
+      position: relative;
+
+
+      &__boots {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .details {
+        position: absolute;
+        height: 3.8rem;
+        width: 3.8rem;
+        cursor: pointer;
+
+        @include mq(lg) {
+          display: none;
+        }
+
+        .details-border {
+          position: absolute;
+          display: none;
+        }
+
+        .details-text {
+          position: absolute;
+          display: none;
+
+          .details-text__title {
+            display: inline-block;
+            padding: 1.5rem 4rem;
+            border: 1px solid $black;
+            font-family: $osb;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+          }
+
+          .details-text__description {
+            display: block;
+            min-width: 24rem;
+            font-family: $os;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            margin-top: 2rem;
+          }
+        }
+
+        .plus {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: inline-block;
+
+          .plus__img {
+            padding: 0.6rem;
+          }
+
+          .plus__img_hovered {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+
+      .details:hover {
+
+        .details-border {
+          display: block;
+        }
+
+        .details-text {
+          display: block;
+        }
+
+        .plus__img_hovered {
+          display: block;
+        }
+      }
+
+      .details-1 {
+        top: 7rem;
+        left: 26rem;
+
+        .details-border {
+          top: -5rem;
+          left: 1.9rem;
+          height: 4.9rem;
+          width: 7.9rem;
+          border-top: 1px solid $black;
+          border-left: 1px solid $black;
+        }
+
+        .details-text {
+          top: -7.2rem;
+          left: 9.9rem;
+        }
+      }
+
+      .details-2 {
+        top: 5rem;
+        left: -0.5rem;
+
+        .details-border {
+          top: -10rem;
+          left: 1.9rem;
+          height: 9.9rem;
+          width: 2.9rem;
+          border-top: 1px solid $black;
+          border-left: 1px solid $black;
+        }
+
+        .details-text {
+          top: -12.2rem;
+          left: 4.9rem;
+        }
+      }
+
+      .details-3 {
+        top: 25rem;
+        left: -1.5rem;
+
+        .details-border {
+          top: -5rem;
+          left: -1rem;
+          height: 4.9rem;
+          width: 2.9rem;
+          border-top: 1px solid $black;
+          border-right: 1px solid $black;
+        }
+
+        .details-text {
+          text-align: right;
+          top: -7.2rem;
+          left: -25rem;
+        }
+      }
+
+      .details-4 {
+        top: 36.5rem;
+        left: 5rem;
+
+        .details-border {
+          top: 3.8rem;
+          left: 1.9rem;
+          height: 3.2rem;
+          width: 2.9rem;
+          border-bottom: 1px solid $black;
+          border-left: 1px solid $black;
+        }
+
+        .details-text {
+          top: 4.9rem;
+          left: 4.9rem;
+        }
+      }
+
+      .details-5 {
+        top: 25rem;
+        left: 54rem;
+
+        .details-border {
+          top: -19.2rem;
+          left: 3.8rem;
+          height: 20.9rem;
+          width: 1.9rem;
+          border-top: 1px solid $black;
+          border-right: 1px solid $black;
+          border-bottom: 1px solid $black;
+        }
+
+        .details-text {
+          text-align: right;
+          top: -21.4rem;
+          left: -20.1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.banner {
+  background: url("../img/boot-brbrown.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+
+
+
+  .container {
+    padding: 17rem 0 10rem;
+    @include flex;
+    @include justify-content-flex-end;
+
+    @include mq(lg) {
+      @include justify-content-center;
+    }
+
+    .banner-container {
+      padding: 7.5rem 4.5rem 5rem;
+      background-color: $white;
+      width: 50rem;
+      box-sizing: border-box;
+      margin-right: 3rem;
+
+      @include mq(lg) {
+        margin-right: 0;
+        background-color: rgba(255,255,255,0.7);
+        text-align: center;
+      }
+
+      @include mq(xs) {
+        padding: 2rem;
+      }
+
+      .banner__title {
+        padding-bottom: 4rem;
+        font-size: 3.6rem;
+      }
+
+      .banner__text-1 {
+        font-family: $os;
+        font-size: 1.1rem;
+        color: $dark-grey;
+        text-transform: uppercase;
+      }
+
+      .banner__border {
+        margin: 4rem 0;
+      }
+
+      .banner__text-2 {
+        font-family: $os;
+        font-size: 1.6rem;
+        color: $dark-grey;
+        line-height: 2.4rem;
+        margin-bottom: 4.5rem;
+      }
+    }
+  }
+}

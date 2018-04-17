@@ -1,0 +1,128 @@
+.testimonials {
+  background: $gray-back;
+
+  .container {
+    text-align: center;
+    padding: 10rem 0;
+
+    .border {
+      margin: 4rem auto;
+    }
+
+    h5 {
+      color: $gray-text;
+      margin-bottom: 12rem;
+    }
+
+    .testimonials-slider {
+      width: 44rem;
+      margin: 0 auto;
+      background: $white;
+      box-shadow: 0 2px 12px 3px rgba(0,0,0,0.2);
+
+      @include mq(s){
+        width: 27rem;
+      }
+
+      .testimonials-slider__slide {
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5rem 6.5rem;
+        background: url("../img/comment.png");
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @include mq(s){
+          padding: 1rem 1.5rem;
+        }
+
+        img {
+          margin: 0 auto 3rem;
+        }
+
+        .comment {
+          font-family: $osi;
+          font-size: 1.4rem;
+          color: $dark-grey;
+          line-height: 2.4rem;
+          margin-bottom: 4.5rem;
+        }
+
+        .author {
+          text-transform: uppercase;
+          font-family: $osb;
+          font-size: 1.4rem;
+          color: $dark-grey;
+        }
+      }
+
+      .slick-arrow {
+        height: 7.7rem;
+        width: 7.7rem;
+      }
+
+      .slick-prev {
+        background: url("../img/prev.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        left: -23rem;
+
+        @include mq(md){
+          left: -10rem;
+        }
+
+        @include mq(s){
+          left: -8rem;
+        }
+
+        @include mq(xs){
+          display: none!important;
+        }
+      }
+
+      .slick-next {
+        background: url("../img/next.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        right: -23rem;
+
+        @include mq(md){
+          right: -10rem;
+        }
+
+        @include mq(s){
+          right: -8rem;
+        }
+
+        @include mq(xs){
+          display: none!important;
+        }
+      }
+
+      .slick-prev:before, .slick-next:before {
+        display: none;
+      }
+
+      .slick-dots {
+        bottom: -6rem;
+
+        li{
+
+          button:before {
+            font-size: 0.5rem;
+            color: $white;
+          }
+        }
+
+        .slick-active {
+
+          button:before {
+            font-size: 1rem;
+            color: #b8b8b8;
+          }
+        }
+      }
+    }
+  }
+}

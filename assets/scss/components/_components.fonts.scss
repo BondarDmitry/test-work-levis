@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans.ttf");
+}
+
+$os: "Open Sans", sans-serif;
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/OpenSansBold.ttf");
+}
+
+$osb: "Open Sans Bold", sans-serif;
+
+@font-face {
+  font-family: "Open Sans Extra Bold";
+  src: url("../fonts/OpenSansExtraBold.ttf");
+}
+
+$oseb: "Open Sans Extra Bold", sans-serif;
+
+@font-face {
+  font-family: "Open Sans Italic";
+  src: url("../fonts/OpenSansItalic.ttf");
+}
+
+$osi: "Open Sans Italic", sans-serif;
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("../fonts/OpenSansLight.ttf");
+}
+
+$osl: "Open Sans Light", sans-serif;
+
+@font-face {
+  font-family: "Open Sans Semi Bold";
+  src: url("../fonts/OpenSansSemiBold.ttf");
+}
+
+$ossb: "Open Sans Semi Bold", sans-serif;

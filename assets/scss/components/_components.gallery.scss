@@ -1,0 +1,59 @@
+.gallery {
+
+  .container {
+    text-align: center;
+
+    .border {
+      margin: 4rem auto;
+    }
+
+    p {
+      text-transform: uppercase;
+      font-family: $os;
+      font-size: 1.5rem;
+      color: $gray-text;
+      margin-bottom: 13rem;
+    }
+
+    .gallery-container {
+      @include flex;
+      @include justify-content-space-between;
+      @include align-items-center;
+      @include flex-wrap(wrap);
+      @include flex-direction-column;
+      height: 68rem;
+      margin-bottom: 18rem;
+
+      @include mq(xs){
+        height: auto;
+      }
+
+
+      .gallery-img {
+        width: 37rem;
+        height: 38rem;
+        @include flex;
+        @include justify-content-center;
+        overflow: hidden;
+
+        @include mq(lg){
+          width: 32%;
+          margin-bottom: 1rem;
+        }
+
+        @include mq(xs){
+          width: 100%;
+        }
+
+        img {
+          height: 100%;
+          display: block;
+        }
+      }
+
+      .small-height {
+        height: 27rem;
+      }
+    }
+  }
+}
